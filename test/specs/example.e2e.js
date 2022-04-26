@@ -8,8 +8,7 @@ describe('My Login application', () => {
         await LoginPage.login('tomsmith', 'SuperSecretPassword!');
         await expect(SecurePage.flashAlert).toBeExisting();
         await expect(SecurePage.flashAlert).toHaveTextContaining(
-            'You logged into a secure area!');
-            console.log("hello my app")        
+            'You logged into a secure area!');      
             console.log("Hello")
     });
 });
